@@ -27,7 +27,7 @@ async function mongoConnect() {
 }
 
 mongoConnect();
-const io = require('socket.io')('https://server-muze.onrender.com', {
+const io = require('socket.io')(server, {
   cors: {
     origin: '*',
     methods: ['GET', 'POST'],
